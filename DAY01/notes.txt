@@ -308,7 +308,7 @@ step 6: refresh the main page ----> It will ask the credentials.
 
 step 7: cd /opt/apache-tomcat-9.0.109/conf/ 
 
-step 8: vi tomcat-users.xml ---> goto end of the file and add users.
+step 8: vi tomcat-users.xml ---> goto end of the file and add users. comment outside add cheyali line num 41 kinda
 
   <user username="kk" password="password" roles="manager-gui,admin-gui"/>
   <user username="mahesh" password="password" roles="manager-gui,admin-gui"/>
