@@ -1,10 +1,6 @@
-
-
-
 Linux
 Git and github
 Shell scripting
-
 Maven 
 
 Tomcat by KK FUNDA
@@ -19,8 +15,6 @@ ear: wildfly required [application server]
 
 Tomcat server:[application server]
 --------------
-
-
 Def: Tomcat or apache tomcat is a opensource web container used to deploy and running the java based web applications, It was developed by Apache software foundation [ASF]
 
 
@@ -36,47 +30,17 @@ Types of application servers
 5. Glashfish .......
 
 
-
-
-
-
-
-
-
-
-
 IQ] why you are going for tomcat app server?
 
 ANS: Now a days most of the projects developed based on the micro service architecture.
   
-    In java MS's developed with the help of springboot framework. For springboot default application server is tomcat.
-
-
-
-
-
-
-
-
-
-
-
+     In java MS's developed with the help of springboot framework. For springboot default application server is tomcat.
 
 
 IQ] what is the diff between tomcat and jboss/wildfly?
 
 
    tomcat mainly used for web applicaions, Jboss used for web/enterprise applications.
-
-
-
-
-
-
-
-
-
-
 
 
 How to download a tomcat server?
@@ -106,7 +70,6 @@ step 6: tree ---> to see the dir structure.
 
 
 
-
 Tomcat directory structure
 ==========================
 
@@ -129,11 +92,11 @@ Tomcat directory structure
 
 3. lib
 
- It contains all jar files, It will helps while running an application.
+It contains all jar files, It will helps while running an application.
 
 4. logs
 
- NOTE: once we start the tomcat server below files will be created.
+NOTE: once we start the tomcat server below files will be created.
 
 catalina.log
 hostmager.log
@@ -145,7 +108,7 @@ localhost.log
 
 Here we are keeping our .war files.
 
- By default we have 5 web applications are there.
+By default we have 5 web applications are there.
 
 ->ROOT
 ->manager
@@ -180,7 +143,6 @@ step 3: sudo su -
 
 step 4: install java
 
-
 NOTE: If you want to search in Linux server use below command
 
 sudo yum search java | grep OpenJDK
@@ -198,13 +160,8 @@ step 5: yum install wget unzip tree -y
 step 6: cd /opt/
    
       wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.109/bin/apache-tomcat-9.0.109.zip
-
      
 step 7: unzip apache-tomcat-9.0.109.zip
-
- 
-
-
 
 step 8: goto the bin directory.
      
@@ -233,7 +190,6 @@ TCP port range: 0 to 65535
 
 
 
-
 IQ] How to check tomcat is running or not?
 
     sudo yum install lsof
@@ -241,11 +197,6 @@ IQ] How to check tomcat is running or not?
 
 
    ps -ef|grep -i "tomcat"
-
-
-
-
-
 
 
 IQ] I want to start/stop tomcat server from anywhere instead of bin dir?
@@ -256,17 +207,7 @@ ln -s /opt/apache-tomcat-9.0.109/bin/shutdown.sh /usr/bin/stopTomcat
 
 Now you can go and run in any directory.
 
-
 http://65.0.182.70:8080
-
-
-
-
-
-
-
-
-
 
 
 
